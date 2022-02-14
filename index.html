@@ -1,56 +1,632 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+  })
+</script>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Nyasha Asheck Hove Portfolio </title>
 
-    Fore more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-  -->
-<!--  <base href="/">-->
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-  <link rel="stylesheet" href="loader.css">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="web_portfolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Creative Portfolio Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
 
-  <title>web_portfolio</title>
-  <link rel="manifest" href="manifest.json">
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
-  <div id="loader">
-    <div class="lds-circle"><div></div></div>
+  
+<div id="header">
+
+</div>
+<!--<header class="navigation fixed-top">-->
+<!--  <nav class="navbar navbar-expand-sm navbar-dark">-->
+<!--    <a class="navbar-brand font-tertiary " href="index.html">-->
+<!--&lt;!&ndash;      <img src="images/logo.png" alt="Myself">&ndash;&gt;-->
+<!--      HOVE-->
+<!--    </a>-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"-->
+<!--      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+
+<!--    <div class="collapse navbar-collapse text-center" id="navigation">-->
+<!--      <ul class="navbar-nav ml-auto">-->
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="index.html">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="about.html">about</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="portfolio.html">Portfolio</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="contact.html">Contact</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--</header>-->
+
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">Hi! I’m <br> Nyasha Asheck Hove <br> Software Developer & 3D Generalist</h1>
+      </div>
+    </div>
   </div>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" ></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=650369619');
-      });
-    }
-  </script>
-  <script>
-    head.js("main.dart.js?version=3", function() {
-      document.getElementById('loader').remove();
-    });
-  </script>
-  <!-- <script src="" type="application/javascript"
-  onendload="document.getElementById('loader').remove();"></script> -->
+  <div class="layer-bg w-100">
+    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l3">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l4">
+    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l5">
+    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l6">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l7">
+    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l8">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="images/illustrations/leaf-cyan-3.png" alt="bg-shape">
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    <li class="mb-3"><a class="text-white" target="_blank" href="https://www.github.com/asheckn"><i class="ti-github"></i></a></li>
+    <li class="mb-3"><a class="text-white" target="_blank" href="https://www.instagram.com/ashecknyasha"><i class="ti-instagram"></i></a></li>
+    <li class="mb-3"><a class="text-white" target="_blank" href="https://www.linkedin.com/in/nyasha-asheck-hove/"><i class="ti-linkedin"></i></a></li>
+    <li class="mb-3"><a class="text-white" target="_blank" href="https://www.twitter.com/asheck_h"><i class="ti-twitter"></i></a></li>
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="font-secondary paragraph-lg text-dark">Hi I'm Nyasha Asheck Hove, software developer, 3D artist and game developer, I have a passion for perfection and
+        and detail in whatever work I do. I can only be happy with my work if its nothing but flawless </p>
+        <a href="about.html" class="btn btn-transparent">More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Mobile Development (90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">API Development (60%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Product & Concept Visualisation (80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Product Animation (80%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <spacer type="vertical" width="100" height="100"> ♢ </spacer>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb197">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web (80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Deployment(60%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Prototyping</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Deep Learning (80%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-1.png" alt="icon">
+        <p class="mb-0">Jan 2020 - August 2020</p>
+        <h4> Developer Intern</h4>
+        <h6 class="text-light">OnaDiamonds</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-1.png" alt="icon">
+        <p class="mb-0">3 Years</p>
+        <h4>Flutter Developer</h4>
+        <h6 class="text-light">Flutter</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-2.png" alt="icon">
+        <p class="mb-0">Sep 2019 - Present </p>
+        <h4>Co-Founder</h4>
+        <h6 class="text-light">Revenant Technologies</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-3.png" alt="icon">
+        <p class="mb-0">Jan 2022 - Present</p>
+        <h4>Developer </h4>
+        <h6 class="text-light">MetBank</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./experience -->
+
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2021</p>
+            <h4>Bachelor of Science in Computer Science Honors </h4>
+            <p class="mb-0 text-light">University of Zimbabwe</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2016</p>
+            <h4>Cambridge A Level</h4>
+            <p class="mb-0 text-light">WestRidge High School Zimbabwe</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2014</p>
+            <h4>Cambidge O Level </h4>
+            <p class="mb-0 text-light">Prince Edward High School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+</section>
+<!-- /education -->
+
+<!-- services -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Services</h2>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">App Development</h4>
+            <p>Design, prototype and Deployment of beautiful android and IOS apps built with passion</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card active-bg-primary hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-vector icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">API Development</h4>
+            <p>Development of fast , reliable , scalable API's built in python for your business needs </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-panel icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">3D Product and Concept Visualisation </h4>
+            <p>Full modeling texturing and rendering  of your product or concept adding an extra dimension to your idea  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /services -->
+
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row shuffle-wrapper">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/android.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/covid.jpg" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/Techold.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/Crystal.jpg" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/send_muzukuru.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/the-discovery.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="#!">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+
+<!-- testimonial -->
+<section class="section bg-primary position-relative testimonial-bg-shapes">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title text-white mb-5">Testimonials</h2>
+      </div>
+      <div class="col-lg-10 mx-auto testimonial-slider">
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">I needed a complex system built to my business requirements . work was done efficiently and communication was consistent
+            <strong>Had great customer experience </strong>
+
+          </p>
+          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+            alt="client-image">
+          <h4 class="text-white">Rutendo Mugadza</h4>
+          <h6 class="text-light mb-4">CEO, Create Innovate</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Had some 3D visualisations that I needed done ,
+            concept was delivered on time and to my expectations .</p>
+          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+            alt="client-image">
+          <h4 class="text-white">Abel Mashayamombe</h4>
+          <h6 class="text-light mb-4">Pricmad Advertising</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg shapes -->
+  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
+  <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
+  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
+  <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
+  <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
+</section>
+<!-- /testimonial -->
+
+<!-- client logo slider -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="client-logo-slider d-flex align-items-center">
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+    </div>
+  </div>
+</section>
+<!-- /client logo slider -->
+
+<!--&lt;!&ndash; blog &ndash;&gt;-->
+<!--<section class="section">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-12 text-center">-->
+<!--        <h2 class="section-title">Blogs</h2>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">-->
+<!--        <article class="card shadow">-->
+<!--          <img class="rounded card-img-top" src="images/blog/post-3.jpg" alt="post-thumb">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>-->
+<!--            </h4>-->
+<!--            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
+<!--              incididunt ut labore et-->
+<!--              dolore magna aliqua.</p>-->
+<!--            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>-->
+<!--          </div>-->
+<!--        </article>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">-->
+<!--        <article class="card shadow">-->
+<!--          <img class="rounded card-img-top" src="images/blog/post-4.jpg" alt="post-thumb">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>-->
+<!--            </h4>-->
+<!--            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
+<!--              incididunt ut labore et-->
+<!--              dolore magna aliqua.</p>-->
+<!--            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>-->
+<!--          </div>-->
+<!--        </article>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">-->
+<!--        <article class="card shadow">-->
+<!--          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb">-->
+<!--          <div class="card-body">-->
+<!--            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>-->
+<!--            </h4>-->
+<!--            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor-->
+<!--              incididunt ut labore et-->
+<!--              dolore magna aliqua.</p>-->
+<!--            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>-->
+<!--          </div>-->
+<!--        </article>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; /blog &ndash;&gt;-->
+
+<!-- contact -->
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here" required></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- footer -->
+<div id="footer"></div>
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">nyasha.ahove@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">+263 772 342 164</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">Mount Pleasant Harare Zimbabwe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright &copy;<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> Designed &amp; Developed by <a class="text-white-50" href="me">Asheck Hove</a></p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
